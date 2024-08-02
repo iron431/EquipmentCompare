@@ -18,8 +18,8 @@
 	"environment": "client",
 
 	"entrypoints": {
-		"main": [
-			"com.anthonyhilyard.equipmentcompare.fabric.EquipmentCompareFabric"
+		"client": [
+			"com.anthonyhilyard.equipmentcompare.fabric.client.EquipmentCompareFabricClient"
 		]
 	 },
 	 "accessWidener": "equipmentcompare.accesswidener",

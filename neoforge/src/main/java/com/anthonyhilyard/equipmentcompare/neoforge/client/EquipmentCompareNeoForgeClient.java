@@ -1,13 +1,16 @@
 package com.anthonyhilyard.equipmentcompare.neoforge.client;
 
-import net.neoforged.bus.api.EventPriority;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import com.anthonyhilyard.equipmentcompare.EquipmentCompare;
 
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.common.Mod;
+
+
+@Mod(value = EquipmentCompare.MODID, dist = Dist.CLIENT)
 public class EquipmentCompareNeoForgeClient
 {
-	@SubscribeEvent(priority = EventPriority.HIGH)
-	public static void onClientSetup(FMLClientSetupEvent event)
+	public EquipmentCompareNeoForgeClient()
 	{
+		EquipmentCompare.init();
 	}
 }
