@@ -7,9 +7,8 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.loading.FMLEnvironment;
 
-@Mod(EquipmentCompare.MODID)
+@Mod(value = EquipmentCompare.MODID, dist = Dist.CLIENT)
 public final class EquipmentCompareNeoForge
 {
 	public EquipmentCompareNeoForge(ModContainer container, IEventBus modBus)
@@ -17,10 +16,7 @@ public final class EquipmentCompareNeoForge
 		// Run our common setup.
 		EquipmentCompare.init();
 
-		if (FMLEnvironment.dist == Dist.CLIENT)
-		{
-			modBus.register(EquipmentCompareNeoForgeClient.class);
-		}
+		modBus.register(EquipmentCompareNeoForgeClient.class);
 	}
 }
 

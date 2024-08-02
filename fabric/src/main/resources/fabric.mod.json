@@ -37,7 +37,7 @@
 		"iceberg": ">=1.2.3"
 	},
 	"suggests": {
-		"trinkets": ">=3.8.0",
+		"trinkets": ">=3.10.0",
 		"legendarytooltips": ">=1.4.7"
 	},
 	"custom": {
